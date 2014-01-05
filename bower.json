@@ -1,0 +1,15 @@
+{
+  "name": "Tweets_Mejorandolaweb",
+  "version": "1.0.0",
+  "description": "A tweets capturer to Mejorandolaweb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/vendor"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "normalize-css": "~2.1.3",
+    "prefix-free": "gh-pages"
+  }
+}

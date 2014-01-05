@@ -1,0 +1,12 @@
+{
+  "name": "Tweets_Mejorandolaweb",
+  "description": "A tweets capturer to Mejorandolaweb",
+  "version": "1.0.0",
+  "author": "@josedeweb, @ios23",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "socket.io": "*",
+    "twit": "*"   
+  }
+}
