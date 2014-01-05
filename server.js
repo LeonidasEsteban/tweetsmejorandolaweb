@@ -3,7 +3,7 @@
 var http	 = require('http');
 var app		 = require('./app/app');
 var server   = http.createServer( app );
-var io		 = require('socket.io').listen( server , {log:true});
+var io		 = require('socket.io').listen( server , {log:false});
 var realtime = require('./app/realtime');
 
 realtime( io );
