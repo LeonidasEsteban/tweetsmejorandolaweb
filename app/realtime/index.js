@@ -5,8 +5,6 @@ var stream 	= Twitter.stream('statuses/filter', {
     track: ['#soytanhipster', '#confiesoque', '#uningeniero'] 
 });
 
-var sleep 	= require('sleep');
-
 module.exports = function ( io ){
 	stream.on('tweet', function ( tweet ) {				
     	io.sockets.emit('tweet', 
@@ -15,7 +13,6 @@ module.exports = function ( io ){
     			image : tweet.user.profile_image_url,
     			text  : tweet.text
     		}
-    	);
-    	sleep.sleep(3);
+    	);    	
 	});
 }

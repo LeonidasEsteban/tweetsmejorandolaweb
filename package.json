@@ -7,7 +7,6 @@
     "express": "*",
     "jade": "*",
     "socket.io": "*",
-    "twit": "*",
-    "sleep": "*"  
+    "twit": "*"
   }
 }
