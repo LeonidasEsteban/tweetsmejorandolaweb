@@ -16,3 +16,5 @@ To start the project, you have to:
 * Write your consumer_key, consumer_secret, access_token and access_token_secret, from your twitter app in the file app/config/auth.js
 
 * And finally, run: node server
+
+###Note: if you wanna change the # to filter the tweets, you can change it in app/realtime/index.js 
