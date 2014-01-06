@@ -16,6 +16,6 @@ module.exports = function ( io ){
     			text  : tweet.text
     		}
     	);
-    	sleep.sleep(2);
+    	sleep.sleep(3);
 	});
 }
