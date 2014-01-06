@@ -10,10 +10,11 @@ body{
 }
 
 figure {
-	margin-left: 5%;
 	height: 90px;
-	width: 12%;
 	line-height: 32px;
+	margin-left: 3%;
+	text-align: center;
+	width: 12%;
 }
 
 figcaption {

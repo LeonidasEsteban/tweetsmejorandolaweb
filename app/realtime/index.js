@@ -1,7 +1,11 @@
 var Twit 	= require('twit');
 var auth 	= require('../config/auth');
 var Twitter = new Twit(auth);
-var stream 	= Twitter.stream('statuses/filter', { track: ['#soytanhipster'] });
+var stream 	= Twitter.stream('statuses/filter', { track: 
+	['#soytanhipster', '#askmatthunter', '#yaestamosen2014y', '#confiesoque'] 
+});
+
+var sleep 	= require('sleep');
 
 module.exports = function ( io ){
 	stream.on('tweet', function ( tweet ) {				
@@ -12,5 +16,6 @@ module.exports = function ( io ){
     			text  : tweet.text
     		}
     	);
+    	sleep.sleep(2);
 	});
 }

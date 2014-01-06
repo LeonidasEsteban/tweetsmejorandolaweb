@@ -3,7 +3,7 @@ var main = function () {
 	client.on('tweet', function (data) {		
 		$("section figure img").attr({'src':data.image});
 		$("section figure figcaption").html("@"+data.name);
-		$("section article").html(data.text);	
+		$("section article").html(data.text);		
 	});
 }
 
