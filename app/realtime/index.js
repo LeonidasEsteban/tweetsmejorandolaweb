@@ -2,7 +2,7 @@ var Twit 	= require('twit');
 var auth 	= require('../config/auth');
 var Twitter = new Twit(auth);
 var stream 	= Twitter.stream('statuses/filter', { 
-    track: ['#soytanhipster'] 
+    track: ['#soytanhipster', '#yaestamosen2014y', '#confiesoque'] 
 });
 
 module.exports = function ( io ){
