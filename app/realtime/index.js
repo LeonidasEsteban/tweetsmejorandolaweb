@@ -1,8 +1,8 @@
 var Twit 	= require('twit');
 var auth 	= require('../config/auth');
 var Twitter = new Twit(auth);
-var stream 	= Twitter.stream('statuses/filter', { track: 
-	['#soytanhipster', '#askmatthunter', '#yaestamosen2014y', '#confiesoque'] 
+var stream 	= Twitter.stream('statuses/filter', { 
+    track: ['#soytanhipster', '#confiesoque', '#uningeniero'] 
 });
 
 var sleep 	= require('sleep');
